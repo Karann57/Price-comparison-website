@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+}
+
+.index-page {
+    background-image: url("shopping-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+.compare-page {
+    background-color: #1c1c1c;
+    padding: 30px;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+form select, form button {
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+form button {
+    background-color: #ff6600;
+    color: white;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #555;
+    padding: 12px;
+    text-align: center;
+}
+
+img {
+    width: 100px;
+    border-radius: 10px;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff6600;
+    padding: 10px 20px;
+    border-radius: 10px;
+}

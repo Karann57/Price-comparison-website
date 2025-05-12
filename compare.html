@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comparison - {{ product }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="compare-page">
+    <div class="container">
+        <h1>{{ product }} - Price Comparison</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Platform</th>
+                    <th>Image</th>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Rating</th>
+                    <th>Reviews</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Amazon</td>
+                    <td><img src="{{ url_for('static', filename=amazon.image) }}" alt="Amazon Product"></td>
+                    <td>{{ amazon.title }}</td>
+                    <td>{{ amazon.price }}</td>
+                    <td>{{ amazon.rating }}</td>
+                    <td>{{ amazon.reviews }}</td>
+                </tr>
+                <tr>
+                    <td>Flipkart</td>
+                    <td><img src="{{ url_for('static', filename=flipkart.image) }}" alt="Flipkart Product"></td>
+                    <td>{{ flipkart.title }}</td>
+                    <td>{{ flipkart.price }}</td>
+                    <td>{{ flipkart.rating }}</td>
+                    <td>{{ flipkart.reviews }}</td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+        <a href="/" class="back-btn">Back</a>
+    </div>
+</body>
+</html>
